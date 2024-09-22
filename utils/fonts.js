@@ -1,10 +1,10 @@
-export function getTextAlign(textAlign = "center") {
-  //教學是textAlign = "left" 因為有拿到textAlign的center,這裡沒有所以用textAlign = "center" 預設
+export function getTextAlign(textAlign) {
   const textAlignMap = {
     left: "text-left",
     right: "text-right",
     center: "text-center",
   };
+  console.log(textAlignMap[textAlign]);
   return `${textAlignMap[textAlign] || ""}`;
 }
 
